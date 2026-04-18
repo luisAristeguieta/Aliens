@@ -77,5 +77,16 @@ public class Alien {
 
 		return false;
 	}
+	
+	public boolean agregarPiernas(int cantidadPiernas) {
+		int totalExtremidades = this.numeroBrazos + this.numeroPies + cantidadPiernas;
+
+		if (totalExtremidades <= 10) {
+			this.numeroPies += cantidadPiernas;
+			return true;
+		}
+
+		return false;
+	}
 
 }
