@@ -62,7 +62,7 @@ public class Alien {
 	public void imprimir() {
 		String mensaje = "Tamaño: " + tamanio + " cm" + " , Color: " + color + " , Numero de Ojos: " + numeroOjos
 				+ " , Numero de Brazos: " + numeroBrazos + " , Numero de Pies: " + numeroPies
-				+ " , Precio Extremidad(es): " + precioExtremidad + "$" + " , Precio Ojo(s): " + precioOjo + "$"
+				+ " , Precio Extremidad: " + precioExtremidad + "$" + " , Precio Ojo: " + precioOjo + "$"
 				+ " , Precio Cuerpo: " + precioCuerpo + "$";
 		System.out.println(mensaje);
 	}
