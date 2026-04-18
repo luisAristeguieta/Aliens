@@ -35,4 +35,17 @@ public class TestAlienJUnit {
 		assertEquals(1, alien.getPrecioCuerpo(), 0.0001);
 	}
 	
+	@Test
+	public void testTamanioAlMaximo() {
+		Alien alien = new Alien(2000, "Verde");
+
+		assertEquals(30, alien.getTamanio());
+		assertEquals("Verde", alien.getColor());
+		
+		assertEquals(3, alien.getPrecioExtremidad(), 0.0001);
+		assertEquals(1.5, alien.getPrecioOjo(), 0.0001);
+		assertEquals(6, alien.getPrecioCuerpo(), 0.0001);
+	}
+	
+	
 }
