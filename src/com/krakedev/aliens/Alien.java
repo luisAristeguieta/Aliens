@@ -88,5 +88,28 @@ public class Alien {
 
 		return false;
 	}
+	
+	public boolean agregarOjos(int cantidadOjos) {
+		
+		int maximoOjos;
+
+		if (this.tamanio >= 5 && this.tamanio <= 10) {
+			maximoOjos = 3;
+		} else if (this.tamanio > 10 && this.tamanio <= 20) {
+			maximoOjos = 5;
+		} else {
+			maximoOjos = 7;
+		}
+
+		int totalOjos = this.numeroOjos + cantidadOjos;
+
+		if (totalOjos <= maximoOjos) {
+			this.numeroOjos += cantidadOjos;
+			return true;
+		}
+
+		return false;
+	}
+	
 
 }
