@@ -46,6 +46,5 @@ public class TestAlienJUnit {
 		assertEquals(1.5, alien.getPrecioOjo(), 0.0001);
 		assertEquals(6, alien.getPrecioCuerpo(), 0.0001);
 	}
-	
-	
+
 }
