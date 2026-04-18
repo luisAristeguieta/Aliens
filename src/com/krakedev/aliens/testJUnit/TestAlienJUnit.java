@@ -20,7 +20,8 @@ public class TestAlienJUnit {
 		
 		assertEquals(2, alien.getPrecioExtremidad(), 0.0001);
 		assertEquals(1, alien.getPrecioOjo(), 0.0001);
-		assertEquals(4, alien.getPrecioCuerpo(), 0.0001);	
+		assertEquals(4, alien.getPrecioCuerpo(), 0.0001);
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 	
 	@Test
@@ -33,6 +34,7 @@ public class TestAlienJUnit {
 		assertEquals(0.5, alien.getPrecioExtremidad(), 0.0001);
 		assertEquals(0.25, alien.getPrecioOjo(), 0.0001);
 		assertEquals(1, alien.getPrecioCuerpo(), 0.0001);
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 	
 	@Test
@@ -45,6 +47,7 @@ public class TestAlienJUnit {
 		assertEquals(3, alien.getPrecioExtremidad(), 0.0001);
 		assertEquals(1.5, alien.getPrecioOjo(), 0.0001);
 		assertEquals(6, alien.getPrecioCuerpo(), 0.0001);
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 
 }

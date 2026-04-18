@@ -16,6 +16,7 @@ public class TestAlienJUnitIA {
 		assertEquals(3.0, alien.getPrecioCuerpo(), 0.0001);
 		assertEquals(1.5, alien.getPrecioExtremidad(), 0.0001);
 		assertEquals(0.75, alien.getPrecioOjo(), 0.0001);
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 
 	@Test
@@ -26,6 +27,7 @@ public class TestAlienJUnitIA {
 		assertEquals(1.0, alien.getPrecioCuerpo(), 0.0001);
 		assertEquals(0.5, alien.getPrecioExtremidad(), 0.0001);
 		assertEquals(0.25, alien.getPrecioOjo(), 0.0001);
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 
 	@Test
@@ -36,6 +38,7 @@ public class TestAlienJUnitIA {
 		assertEquals(6.0, alien.getPrecioCuerpo(), 0.0001);
 		assertEquals(3.0, alien.getPrecioExtremidad(), 0.0001);
 		assertEquals(1.5, alien.getPrecioOjo(), 0.0001);
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 
 	@Test
@@ -45,5 +48,6 @@ public class TestAlienJUnitIA {
 		assertEquals(0, alien.getNumeroOjos());
 		assertEquals(0, alien.getNumeroBrazos());
 		assertEquals(0, alien.getNumeroPies());
+		assertEquals(0, alien.getPrecioTotal(), 0.0001);
 	}
 }

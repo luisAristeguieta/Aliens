@@ -13,14 +13,17 @@ public class TestExtremidadesJUnit {
 	public void testAgregarBrazos() {
 		Alien alien = new Alien(10, "Verde");
 		
-		
+		// System.out.println("**Estado Inicial");
 		// alien.imprimir();
 		
 		boolean resultado = alien.agregarBrazos(4);
-
+		
+		// System.out.println("**Estado Final");
+		
 		assertTrue(resultado);
 		assertEquals(4, alien.getNumeroBrazos());
 		assertEquals(0, alien.getNumeroPies());
+		assertEquals(6, alien.getPrecioTotal(), 0.0001);
 	}
 	
 	@Test
@@ -33,6 +36,7 @@ public class TestExtremidadesJUnit {
 		assertTrue(resultado);
 		assertEquals(0, alien.getNumeroBrazos());
 		assertEquals(3, alien.getNumeroPies());
+		assertEquals(5, alien.getPrecioTotal(), 0.0001);
 	}
 	
 	
