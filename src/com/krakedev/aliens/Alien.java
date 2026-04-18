@@ -66,5 +66,16 @@ public class Alien {
 				+ " , Precio Cuerpo: " + precioCuerpo + "$";
 		System.out.println(mensaje);
 	}
+	
+	public boolean agregarBrazos(int cantidadBrazos) {
+		int totalExtremidades = this.numeroBrazos + this.numeroPies + cantidadBrazos;
+
+		if (totalExtremidades <= 10) {
+			this.numeroBrazos += cantidadBrazos;
+			return true;
+		}
+
+		return false;
+	}
 
 }
