@@ -23,5 +23,16 @@ public class TestAlienJUnit {
 		assertEquals(4, alien.getPrecioCuerpo(), 0.0001);	
 	}
 	
+	@Test
+	public void testTamanioAlMinimo() {
+		Alien alien = new Alien(2, "Verde");
+
+		assertEquals(5, alien.getTamanio());
+		assertEquals("Verde", alien.getColor());
+		
+		assertEquals(0.5, alien.getPrecioExtremidad(), 0.0001);
+		assertEquals(0.25, alien.getPrecioOjo(), 0.0001);
+		assertEquals(1, alien.getPrecioCuerpo(), 0.0001);
+	}
 	
 }
